@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  overflows-container:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 9696:9999
+    restart: always
